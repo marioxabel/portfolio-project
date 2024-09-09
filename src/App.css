@@ -6,7 +6,9 @@
   --text-color: #CCCCCCff;
 }
 
-
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: var(--background-color);
   color: var(--primary-color);
@@ -14,7 +16,7 @@ body {
   max-width: 1280px;
   padding: 0 2rem;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "JetBrains Mono", monospace;
 }
 
 
