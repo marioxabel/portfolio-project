@@ -1,0 +1,100 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Keep it on top of other content */
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+svg.menu {
+    display: none;
+}
+/* 
+#name {
+    color: var(--secondary-color)
+} */
+.active {
+    color: var(--text-color);
+}
+
+a {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    svg.menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    nav ul {
+        padding: 1rem 0;
+        position: absolute;
+        top: 100%;
+        /* Position it just below the nav */
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--background-color);
+        border: var(--primary-color) 1px solid;
+        display: none;
+        z-index: 999;
+        /* Ensure it overlays other content */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        font-size: 1.3rem;
+        justify-content: center;
+        margin-left: 0;
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    /* Mask overlay for dimming the background */
+    .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent black */
+        z-index: 998;
+        /* Slightly lower than the menu but higher than other content */
+        display: none;
+        /* Hidden by default */
+    }
+
+    .mask.show {
+        display: block;
+    }
+}
