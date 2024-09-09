@@ -1,0 +1,15 @@
+div.resume {
+    
+}
+
+ul.resume__ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul.resume__ul li {
+    color: var(--secondary-color);
+    list-style-type: '> ';
+    justify-content: center;
+    list-style-position: inside;
+}

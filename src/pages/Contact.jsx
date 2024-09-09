@@ -54,7 +54,7 @@ export default function Contact() {
                     className="form__input form__input-message"
                     required
                 />
-                <button type="submit" className="form__button" >Submit</button>
+                <button type="submit" className="form__button" >&gt; Submit</button>
 
             </form>
         </>

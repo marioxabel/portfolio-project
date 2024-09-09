@@ -1,9 +1,10 @@
 :root {
   --primary-color: #14B22Aff;
   --secondary-color: #0487FAff;
+  --third-color: #D4AF37;
   --background-color: #12171D;
   --border-color: #40E07D;
-  --text-color: #CCCCCCff;
+  --text-color: #E0E0E0;
 }
 
 * {
@@ -13,11 +14,22 @@ body {
   background-color: var(--background-color);
   color: var(--primary-color);
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1000px;
   padding: 0 2rem;
   text-align: center;
   font-family: "JetBrains Mono", monospace;
 }
 
 
-/* #6272A4 metal gray */
+.yellow {
+  color: var(--third-color);
+}
+
+.yellow:hover {
+  color: var(--text-color);
+}
+
+span {
+  color: var(--secondary-color);
+  font-weight: bold;
+}

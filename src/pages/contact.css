@@ -11,13 +11,13 @@ form {
     font-size: 16px;
     background-color: var(--background-color);
     color: var(--text-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--third-color);
 }
 
-/* .form__input:focus {
+.form__input:focus {
     outline: none;
-    border-color: var(--secondary-color);
-} */
+    border-color: var(--text-color);
+}
 
 .form__input-message {
     height: 10rem;
@@ -27,7 +27,7 @@ form {
 .form__button {
     padding: 10px 15px;
     font-size: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     color: var(--background-color);
     font-weight: bold;
     border: none;
@@ -37,5 +37,5 @@ form {
 }
 
 .form__button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--text-color);
 }
