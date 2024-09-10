@@ -2,9 +2,10 @@ nav.nav__principal {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
+    color: var(--third-color);
     /* Keep it on top of other content */
 }
 
@@ -15,7 +16,11 @@ nav.nav__principal {
 .nav__principal__li {
     list-style-type: none;
     margin-left: 20px;
-    font-size: 1.2rem;
+    font-size: 1.2rem;   
+}
+
+.nav__principal__li a {
+    color: var(--third-color);;
 }
 
 svg.menu-icon {
@@ -25,24 +30,18 @@ svg.menu-icon {
 #name {
     color: var(--secondary-color)
 } */
-.active {
-    color: var(--third-color);
+.menu-icon rect {
+    fill: var(--third-color);
 }
 
-a {
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover {
+.menu-icon:hover rect, .nav__principal__li a:hover {
+    fill: var(--text-color);
     color: var(--text-color);
 }
 
-.menu-icon:hover rect{
-    fill: var(--text-color);
+a.active {
+    color: var(--text-color);
 }
-
 
 
 @media (max-width: 700px) {

@@ -13,9 +13,9 @@ export default function Navbar() {
                 <Link onClick={() => menuShow && toggleMenu()} id='name' to='/'><h1>mario abel</h1></Link>
                 <div>
                     <svg onClick={toggleMenu} className='menu-icon' width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="30" height="3" rx="1.5" fill="#14B22Aff" />
-                        <rect y="9" width="30" height="3" rx="1.5" fill="#14B22Aff" />
-                        <rect y="18" width="30" height="3" rx="1.5" fill="#14B22Aff" />
+                        <rect width="30" height="3" rx="1.5" />
+                        <rect y="9" width="30" height="3" rx="1.5" />
+                        <rect y="18" width="30" height="3" rx="1.5" />
                     </svg>
                     <ul className={`nav__principal__ul ${menuShow ? "show" : ""}`}>
                         <li className="nav__principal__li" onClick={toggleMenu}><NavLink to='/'>About</NavLink></li>

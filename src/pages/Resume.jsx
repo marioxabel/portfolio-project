@@ -4,7 +4,7 @@ export default function Resume() {
     return (
         <div className='resume'>
             <h1>Resume</h1>
-            <p>Download my resume <a className="yellow" target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/5/56/Bsodwindows10.png">here</a></p>
+            <p>Download my resume <a className="yellow" target="_blank" href="https://static.jobscan.co/blog/uploads/no-experience-resume-1.png">here</a></p>
             <h2>Front-end stack</h2>
             <ul className="resume__ul">
                 <li>HTML</li>
@@ -19,6 +19,7 @@ export default function Resume() {
                 <li>Node</li>
                 <li>Express.js</li>
                 <li>SQL</li>
+                <li>Python</li>
             </ul>
             <h2>Technologies</h2>
             <ul className="resume__ul">
