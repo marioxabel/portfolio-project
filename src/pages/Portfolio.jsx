@@ -12,6 +12,9 @@ export default function Portfolio() {
                                 <img src={element.image} alt="project image" />
                             </div>
                             <h3>{element.name}</h3>
+                            <a target="_blank" className="yellow" href={element.deployed}>Deployed app</a>
+                            <br />
+                            <a target="_blank" className="yellow" href={element.github}>Github repo</a>
                         </div>
                     )
                 })}
